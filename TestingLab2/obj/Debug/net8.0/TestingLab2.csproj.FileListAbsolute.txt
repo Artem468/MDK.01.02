@@ -1,0 +1,14 @@
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.AssemblyInfoInputs.cache
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.AssemblyInfo.cs
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.csproj.CoreCompileInputs.cache
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\bin\Debug\net8.0\TestingLab2.exe
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\bin\Debug\net8.0\TestingLab2.deps.json
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\bin\Debug\net8.0\TestingLab2.runtimeconfig.json
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\bin\Debug\net8.0\TestingLab2.dll
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\bin\Debug\net8.0\TestingLab2.pdb
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.dll
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\refint\TestingLab2.dll
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.pdb
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\TestingLab2.genruntimeconfig.cache
+D:\disk_E\programs_on_C\TestingLab2\TestingLab2\obj\Debug\net8.0\ref\TestingLab2.dll
