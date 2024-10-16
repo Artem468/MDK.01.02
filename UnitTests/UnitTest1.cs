@@ -8,18 +8,31 @@ namespace UnitTests
         [TestMethod]
         public void TestPositive()
         {
-            Assert.AreEqual(Convertor.NumberConvertor(10, 7), 13);
-            Assert.AreEqual(Convertor.NumberConvertor(51, 3), 1220);
-            Assert.AreEqual(Convertor.NumberConvertor(623, 5), 4443);
-            Assert.AreEqual(Convertor.NumberConvertor(99, 6), 243);
-            Assert.AreEqual(Convertor.NumberConvertor(46, 8), 56);
+            CollectionAssert.AreEqual(
+                Convertor.FromArrayToMatrix(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 3),
+                new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }
+            );
+            CollectionAssert.AreEqual(
+                Convertor.FromArrayToMatrix(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 }),
+                new int[4, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } }
+            );
+            CollectionAssert.AreEqual(
+                Convertor.FromArrayToMatrix(new[] { 5, 6, 7, 8, 9, 10, 11, 12 }),
+                new int[4, 4] { { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } }
+            );
         }
+
         [TestMethod]
         public void TestNegative()
         {
-            Assert.AreEqual(Convertor.NumberConvertor(10, 1), 0);
-            Assert.AreEqual(Convertor.NumberConvertor(12, 110), 0);
-            Assert.AreEqual(Convertor.NumberConvertor(-2, 3), 0);
+            CollectionAssert.AreEqual(
+                Convertor.FromArrayToMatrix(new[] { 5, 6, 7, 8, 9, 10, 11, 12 }, 0),
+                null
+            );
+            CollectionAssert.AreEqual(
+                Convertor.FromArrayToMatrix(new[] { 5, 6, 7, 8, 9, 10, 11, 12 }, -2),
+                null
+            );
         }
     }
 }
