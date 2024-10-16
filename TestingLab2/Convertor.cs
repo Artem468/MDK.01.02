@@ -2,22 +2,29 @@
 {
     public class Convertor
     {
-        public static int NumberConvertor(int number, int notation)
+        public static int[,]? FromArrayToMatrix(int[] array, int size = 4)
         {
-            if (notation < 2 || notation > 9 || number <= 0)
+            if (size <= 0)
             {
-                return 0;
+                return null;
             }
 
-            string result = "";
-            while (number > 0)
+            int[,] result = new int[size, size];
+            int length = array.Length;
+
+            for (int i = 0; i < size * size; i++)
             {
-                int remainder = number % notation;
-                result = remainder + result;
-                number /= notation;
+                if (i < length)
+                {
+                    result[i / size, i % size] = array[i];
+                }
+                else
+                {
+                    result[i / size, i % size] = 0;
+                }
             }
 
-            return int.Parse(result);
+            return result;
         }
     }
 }
